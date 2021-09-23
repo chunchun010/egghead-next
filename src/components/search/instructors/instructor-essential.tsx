@@ -29,7 +29,7 @@ const SearchInstructorEssential: FunctionComponent<InstructorProps> = ({
 
   const location = `${name} landing`
   return (
-    <>
+    <div>
       <NextSeo
         title={`Learn web development from ${name} on egghead`}
         twitter={{
@@ -132,7 +132,7 @@ const SearchInstructorEssential: FunctionComponent<InstructorProps> = ({
         {CTAComponent ? CTAComponent : <DefaultCTA location={location} />}
       </div>
       {children}
-    </>
+    </div>
   )
 }
 
